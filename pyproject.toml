@@ -11,6 +11,9 @@ classifiers = ["Private :: Do Not Upload"]
 name = "Shant Ergenian"
 email = "shaaant@pm.me"
 
+[project.urls]
+repository = "https://github.com/tnahs/rlog"
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
