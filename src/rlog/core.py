@@ -4,7 +4,8 @@ from datetime import datetime
 from enum import StrEnum
 from typing import TYPE_CHECKING, Any
 
-from rich.console import Capture, Console as _Console
+from rich.console import Capture
+from rich.console import Console as _Console
 from rich.pretty import pprint
 from rich.text import Text
 
