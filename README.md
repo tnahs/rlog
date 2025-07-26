@@ -4,8 +4,8 @@
 
 ```shell
 # Force re-install the latest.
-uv pip install --no-cache --force-reinstall "git+https://github.com/tnahs/rlog.git"
+uv pip install "git+https://github.com/tnahs/rlog.git" --no-cache --force-reinstall
 
 # This currently does not work.
-uv add "rlog @ git+https://github.com/tnahs/rlog" --no-cache --force-reinstall
+uv add "rlog @ git+https://github.com/tnahs/rlog" --branch main --no-cache --force-reinstall
 ```
