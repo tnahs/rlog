@@ -1,0 +1,16 @@
+[project]
+name = "rlog"
+version = "0.1.0"
+description = "A simple Rich-based logger."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = ["rich>=14.1.0"]
+classifiers = ["Private :: Do Not Upload"]
+
+[[project.authors]]
+name = "Shant Ergenian"
+email = "shaaant@pm.me"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
