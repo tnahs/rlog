@@ -3,7 +3,7 @@ name = "rlog"
 version = "0.1.0"
 description = "A simple Rich-based logger."
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.11"
 dependencies = ["rich>=14.1.0"]
 classifiers = ["Private :: Do Not Upload"]
 
