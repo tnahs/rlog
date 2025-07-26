@@ -4,7 +4,7 @@ from datetime import datetime
 from enum import StrEnum
 from typing import TYPE_CHECKING, Any
 
-from rich.console import Console as _Console
+from rich.console import Capture, Console as _Console
 from rich.pretty import pprint
 from rich.text import Text
 
@@ -77,6 +77,17 @@ class Console:
 
     def print(self, *text, **kwargs) -> None:
         self._stdout.print(*text, **kwargs)
+
+    def clear(self, home: bool = True) -> None:
+        """Clear the screen.
+
+        Args:
+            home: Also move the cursor to 'home' position.
+        """
+        self._stdout.clear(home)
+
+    def capture(self) -> Capture:
+        return self._stdout.capture()
 
     def info(self, *text, raw: bool = False, **kwargs) -> None:
         self._write(*text, log_level=LogLevel.INFO, raw=raw, **kwargs)
