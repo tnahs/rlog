@@ -1,11 +1,15 @@
 # rlog
 
+A simple Rich-based logger.
+
 ## Installation with `uv`
 
-```shell
-# Force re-install the latest.
-uv pip install "git+https://github.com/tnahs/rlog.git" --no-cache --force-reinstall
+Force reinstall a specific tag. Replace `[TAG]` with the tag e.g. `v0.3.0`.
 
-# This currently does not work.
-uv add "rlog @ git+https://github.com/tnahs/rlog" --branch main --no-cache --force-reinstall
+```shell
+uv add "rlog @ git+https://github.com/tnahs/rlog" --tag [TAG] --no-cache --force-reinstall
+
+# or
+
+uv pip install "git+https://github.com/tnahs/rlog.git@[TAG]" --no-cache --force-reinstall
 ```
